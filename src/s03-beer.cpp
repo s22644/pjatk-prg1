@@ -11,6 +11,6 @@ int n=99;
         std::cout << --n << " bottles of pop on the wall.\n\n";
     }
         std::cout << "No more bottles of beer on the wall, no more bottles of beer.\n";
-        std::cout << "Got to the store and buy some more, 99 bottles of beer on the wall...\n"
+        std::cout << "Got to the store and buy some more, 99 bottles of beer on the wall...\n";
 return 0;
 }
