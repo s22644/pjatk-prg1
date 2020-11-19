@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-int a, n;
+int n;
     std::cout << "Sprawdź czy liczba jest podzielna przez 3 lub 5,\nWpisz wartość: ";
     std::cin >> n;
     if(n%15 == 0)
