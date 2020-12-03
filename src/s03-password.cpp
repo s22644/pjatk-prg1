@@ -1,5 +1,4 @@
 #include <iostream>
-<<<<<<< HEAD
 #include <string>
 int main() {
   std::string i;
