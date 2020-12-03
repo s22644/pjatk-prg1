@@ -1,4 +1,4 @@
-#include <home/student/s22644/pjatk-prg1/include/student.h>
+#include <s22644/pjatk-prg1/include/student.h>
 
 #include <iostream>
 
