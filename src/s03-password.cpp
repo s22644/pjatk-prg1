@@ -1,24 +1,17 @@
 #include <iostream>
-using namespace std;
-int main()
+<<<<<<< HEAD
+#include <string>
+int main() {
+  std::string i;
+  std::cout << "Podaj hasło: ";
+  std::getline(std::cin, i);
+i == "student";
 {
-    string i;
-    cout << "Podaj hasło: ";
-    cin >> i;
-    if (i == "student")
-    {
-        cout << "Poprawne hasło!" << endl;
-    }
-    else
-    {
-        cout << "Podaj hasło: ";
-        cin >> i;
-    }
-    while(i != "student")
-    {
-        cout << "Podaj hasło: ";
-        cin >> i;
-    }
-    cout << "Poprawne hasło!" << endl;
+    while (i != "student") {
+    std::cout << "Podaj hasło: ";
+    std::getline(std::cin, i);
+  }
+  std::cout << "Poprawne hasło!" << "\n";
+}
 return 0;
 }
