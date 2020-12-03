@@ -1,13 +1,14 @@
 #include <iostream>
-using namespace std;
-int main()
-{
-    int a, x;
-    cout << "Podaj wartość do odliczania: ";
-    cin >> a;
-    for (x = a; x; x=x-1){
-        cout << "x = " << x << endl;
-        cout << "Koniec bo x = " << x << endl;
-    }
+int main() {
+  auto a = int{};
+  auto x = int{};
+
+  for (auto x = a; x; --x) {
+    
+    std::cout << " " << a;
+    std::cout << " " << x << "\n";
+  }
+    std::cout << " " << x << "\n";
+    
 return 0;
 }
