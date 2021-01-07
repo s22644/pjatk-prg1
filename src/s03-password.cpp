@@ -4,14 +4,14 @@ int main() {
   std::string i;
   std::cout << "Podaj hasło: ";
   std::getline(std::cin, i);
-i == "student";
-{
+  i == "student";
+  {
     while (i != "student") {
-    std::cout << "Podaj hasło: ";
-    std::getline(std::cin, i);
+      std::cout << "Podaj hasło: ";
+      std::getline(std::cin, i);
+    }
+    std::cout << "Poprawne hasło!"
+              << "\n";
   }
-  std::cout << "Poprawne hasło!" << "\n";
+  return 0;
 }
-return 0;
-}
-

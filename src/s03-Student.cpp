@@ -1,6 +1,8 @@
-#include <s22644/Student.h>
+#include <22644/include/student.h>
 
 #include <iostream>
+#include <sstream>
+#include <string>
 
 auto main() -> int {
   auto name = s22644::Student{"Alicja"};
