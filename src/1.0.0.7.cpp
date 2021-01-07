@@ -10,15 +10,12 @@ auto ask_user_for_integer(std::string const prompt) -> int {
 }
 auto main() -> int {
   auto const a = ask_user_for_integer("a = ");
-if(a>0){
+  if (a > 0) {
     std::cout << "1 \n";
-}
-else if(a==0){
+  } else if (a == 0) {
     std::cout << "0 \n";
-}
-else if(a<0){
+  } else if (a < 0) {
     std::cout << "-1 \n";
+  }
+  return 0;
 }
-return 0;
-}
-
