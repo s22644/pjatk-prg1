@@ -21,8 +21,17 @@ auto ask_user_for_integer(std::string const prompt) -> int {
 auto main() -> int {
   auto n = ask_user_for_integer("Podaj liczbę: ");
 
-  if (czy_pierwsza(n))
-    std::cout << "Liczba " << n << " jest pierwsza" << std::endl;
+  if (n == 2)
+    std::cout << n + n << std::endl;
+
+  else if (czy_pierwsza(n))
+    do {
+      auto s = n--;
+      s = s + n;
+      while (czy_pierwsza(n))
+
+        std::cout << s;
+    }
   else
     std::cout << "Liczba " << n << " nie jest pierwsza" << std::endl;
   return 0;
