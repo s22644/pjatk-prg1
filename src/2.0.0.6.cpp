@@ -15,7 +15,7 @@ auto main() -> int {
   auto const d = ask_user_for_integer("d = ");
   auto const e = ask_user_for_integer("e = ");
   auto const f = ask_user_for_integer("f = ");
-  auto y;
+  int y;
 
   if (a > y) {
     std::cout << a << ">" << y << std::endl;
