@@ -11,11 +11,9 @@ auto ask_user_for_integer(std::string const prompt) -> int {
 auto main() -> int {
   auto const a = ask_user_for_integer("a = ");
   auto const b = ask_user_for_integer("b = ");
-  for (auto i = 1; i <= a; i++) {
-    for (auto j = 1; j <= b; j++) {
-      std::cout << "*";
-    }
-    std::cout << '\n';
-  }
+  if (b == 0) {
+    std::cout << "Nie dzielimy przez 0!!!\n";
+  } else
+    std::cout << "a / b = " << (a / b) << "\n";
   return 0;
 }

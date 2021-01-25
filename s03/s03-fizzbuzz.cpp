@@ -1,11 +1,11 @@
 #include <iostream>
 
-int main() {
+auto main() {
   int limit;
   std::cout
       << "Sprawdź czy liczba jest podzielna przez 3 lub 5,\nWpisz wartość: ";
   std::cin >> limit;
-  for (int i = 1; i <= limit; i++) {
+  for (auto i = 1; i <= limit; i++) {
     if (i % 15 == 0) {
       std::cout << i << " FizzBuzz";
     } else if (i % 3 == 0) {
