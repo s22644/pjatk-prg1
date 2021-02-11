@@ -1,21 +1,26 @@
 #include <iostream>
+#include <string>
 
-auto iota (int a [], int n, int start) -> void
-{
-    start = 5;
-    a[n]= {start};
-    std::cout << "Tablica, której początkiem jest zmienna start " << n <<  std::endl;
-    for ( int i= 0; i<n; i++) {
-        std::cout << start++ << " ";  
+auto ask_user_for_integer ( std :: string const prompt ) -> int{
+
+    if (not prompt.empty ()){
+        
+        std :: cout << prompt ;
     }
-    std::cout<<std::endl;
+    
+    auto value = std :: string {};
+    std :: getline ( std :: cin , value );
+    return std :: stoi ( value );
 }
 
-int main () 
-{
-    int start = 5;
-    const int n = 10;
-    int a[n]= {start};
-    iota (a, n, start);
-    return 0;
+auto aiota(int a[], int n, int start) -> void{
+
+    auto n = ask_user_for_integer("n =");
+    auto start = ask_user_for_integer("start =");
+
+char a[n]={};
+aiota (a,n);
+a[0]=start;
+return 0;
 }
+
